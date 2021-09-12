@@ -1,1 +1,1 @@
-## [RSSchool-CV](https://uchtiv.github.io/rs-school-cv/)
+## [RSSchool-CV](https://uchtiv.github.io/rsschool-cv/cv)
