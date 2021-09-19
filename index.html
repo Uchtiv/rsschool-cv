@@ -4,27 +4,48 @@
 <head>
   <meta charset="utf-8">
   <title>CV</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500&display=swap" rel="stylesheet">
-  <link href="./style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./css/solarized-light.min.css" rel="stylesheet">
   <link href="./assets/favicon/favicon.svg" rel="icon">
-  <link rel="stylesheet" href="./css/solarized-light.min.css">
+  <link href="./css/normalize.css" rel="stylesheet">
+  <link href="./style.css" rel="stylesheet">
 </head>
 
 <body>
-  <div class="wrapper">
-    <header>
-      <a href="https://github.com/uchtiv">
-        <img src="./assets/images/photo.jpg" alt="Me" width="220" height="220">
-      </a>
-      <h1>
-        <a href="https://github.com/uchtiv">
-          #_#
-        </a>
+    <header class="header">
+      <div class="wrapper header__wrapper">
+        <div class="hamburger-menu">
+          <span class="menuIcon material-icons">
+          menu
+        </span>
+        <span class="xIcon material-icons">
+          close
+        </span>
+        </div>
+        <nav class="nav">
+        <ul class="nav__wrapper">
+          <li class="nav__item"><a class="nav__item__link" href="#summary">Summary</a></li>
+          <li class="nav__item"><a class="nav__item__link" href="#skills">Skills</a></li>
+          <li class="nav__item"><a class="nav__item__link" href="#code">Code</a></li>
+          <li class="nav__item"><a class="nav__item__link" href="#experience">Experience</a></li>
+          <li class="nav__item"><a class="nav__item__link" href="#education">Education</a></li>
+        </ul>
+      </nav>
+    </div>
+     </header>
+    <main class="page">
+        <section class="contacts">
+          <div class="wrapper contacts__wrapper">
+          <a class="photo" href="https://github.com/uchtiv">
+            <img src="./assets/images/photo.jpg" alt="Me" width="220" height="220">
+          </a>
+        <div class="contacts-text">
+          <a class="header-link" href="https://github.com/uchtiv">
+      <h1 class="page__title">
+          Victor Berg
       </h1>
-    </header>
-    <main>
-      <div class="contacts">
-        <h2>Contacts:</h2>
+        </a>
+        <h2>Frontend Developer</h2>
         <ul>
           <li>
             <span>
@@ -41,71 +62,66 @@
             </a>
           </li>
         </ul>
+       
       </div>
-      <section>
+    </div>
+        </section>
+      <section class="summary" id="summary">
+        <div class="wrapper">
         <h4>
           Summary:
         </h4>
         <p>
           Trying to learn new things. Love Linux, FOSS and Web Technologies.
         </p>
+      </div>
       </section>
-      <section>
+      <section class="skills" id="skills">
+        <div class="wrapper">
         <h4>
           Skills:
         </h4>
         <ul class="skills-list">
-          <li>
-            JS basic,
-          </li>
-          <li>
-            HTML,
-          </li>
-          <li>
-            CSS,
-          </li>
-          <li>
-            Sass,
-          </li>
-          <li>
-            SQL,
-          </li>
-          <li>
-            Bash,
-          </li>
-          <li>
-            Webpack,
-          </li>
-          <li>
-            NPM,
-          </li>
-          <li>
-            Git.
-          </li>
+          <li>JS basic,</li>
+          <li>HTML,</li>
+          <li>CSS,</li>
+          <li>Sass,</li>
+          <li>SQL,</li>
+          <li>Bash,</li>
+          <li>Webpack,</li>
+          <li>NPM,</li>
+          <li>Git.</li>
         </ul>
+      </div>
       </section>
-      <section>
+      <section class="code" id="code">
+        <div class="wrapper">
         <h4>
           Code Example:
         </h4>
         <pre>
             <code>
-              function example() { 
-                alert('вы умеете работать с подсветкой кода в markdown!');
-              }
-              example();
+function example() { 
+  alert('вы умеете работать с подсветкой кода в markdown!');
+}
+
+example();
           </code>
         </pre>
+      </div>
       </section>
-      <section>
+      <section class="experience" id="experience">
+        <div class="wrapper">
         <h4>
           Experience:
         </h4>
         <p>
           Creating simple web pages.
         </p>
+      </div>
       </section>
-      <section>
+      <section class="education" id="education">
+        <div class="wrapper">
         <h4>
           Education:
         </h4>
@@ -118,24 +134,29 @@
         <a href="https://codecademy.com">
           codecademy.com
         </a><br>
+      </div>
       </section>
-      <section>
+      <section class="language" id="language">
+        <div class="wrapper">
         <h4>
           English:
         </h4>
         <p>
           A2 (Pre-Intermediate).
         </p>
+      </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
+      <div class="wrapper">
       <span>
         <time datetime="2021">
           © 2021 GitHub, Inc.
         </time>
       </span>
+    </div>
     </footer>
-  </div>
+  <script src="./js/script.js"></script>
   <script src="./js/highlight.min.js"></script>
   <script>hljs.highlightAll();</script>
 </body>
