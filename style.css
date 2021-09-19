@@ -1,19 +1,71 @@
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/RobotoMono-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/fonts/RobotoMono-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: italic;
+  font-weight: 400;
+  src: url("./assets/fonts/RobotoMono-Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: url("./assets/fonts/Lato-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/Lato-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/fonts/Lato-Bold.woff") format("woff");
+}
+
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
+}
+
+:root {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-size: 10px;
 }
   
 img {
+  display: block;
   max-width: 100%;
   height: auto;
   border-radius: 50%;
-  margin: 10px 10px;
 }
 	    
 a {
   color: #1B1B32;
   text-decoration: none;
+  transition: all ease 0.50s;
 }
 
 a:hover {
@@ -21,7 +73,21 @@ a:hover {
 }
 
 h4, h2, h1 {
-  margin: 15px 0px;
+  margin-bottom: 20px;
+  font-family: "Roboto Mono", monospace;
+}
+
+h1 {
+  font-size: 6.5rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #DCDCDC;
+
 }
 	    
 span {
@@ -31,39 +97,179 @@ span {
 li {
   list-style-type: none;
 }
+
+pre {
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+code {
+  white-space: pre-wrap;
+  word-break: break-all;
+}
 	    
+section {
+  #margin-bottom: 20px;
+  padding: 20px 20px;
+  #box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  #transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  #font-family: "Lato", monospace;
+}
+section:hover {
+  #box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: #DCDCDC;
+  z-index: 1;
+  border-top: 3px solid #D64937;
+}
 .wrapper {
+  display: flex;
+  flex-direction: column;
   max-width: 960px;
-  text-align: center;
   margin: 0 auto;
-  font-family: 'Roboto Mono', monospace;
-  font-size: 16px;
+  width: calc(100% - 40px);
+  font-size: 1.6rem;
   color: #1B1B32;
 }
-	    
-main {
+.header__wrapper {
+  height: 82px;
+  padding: 20px 0 20px 0;
+}
+
+
+.hamburger-menu {
+  display: none;
+}
+
+.material-icons {
+  font-size: 4.8rem;
+}
+
+.nav {
+}
+.nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.8rem;
+}
+.nav__item {
+  padding: 10px;
+  border-bottom: 2px solid;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all ease 0.50s;
+}
+
+.nav__item:hover {
+  border-bottom: 2px solid #D64937;
+}
+
+.nav__item:hover > a {
+  text-decoration: none;
+  color: #D64937;
+
+}
+.page {
+  padding-top: 85px;
   text-align: left;
 }
-
 .contacts {
-  margin: 10px 10px;
+  background-color: #D64937;
+  background-image: linear-gradient(120deg, #2D2D2D, #D64937);
+  #border-bottom: 5px solid #D64937;
+}
+.contacts__wrapper {
+  #align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 60px 0 60px 0;
+}
+.photo {
+  display: block;
+  border-radius: 50%;
+  border: 5px solid #DCDCDC;
+  padding: 10px;
+  transition: all ease 0.50s;
+}
+.photo:hover {
+  border: 5px solid #D64937;
 }
 
+.photo img {
+  filter: grayscale(1);
+  transition: all ease 0.50s;
+}
+
+.photo:hover img {
+  filter: grayscale(0);
+}
+.contacts-text {
+  padding-top: 15px;
+  text-align: center;
+}
+.header-link {
+  color: #DCDCDC;
+  display: block;
+}
+.page__title {
+}
+.summary {
+}
+.skills {
+}
 .skills-list {
   display: flex;
   flex-wrap: wrap;
 }
-
-section {
-  margin: 10px 10px;
-  padding: 20px 20px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+.code {
 }
-section:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+.experience {
 }
-
-footer {
+.education {
+}
+.language {
+}
+.footer {
   margin: 20px auto;
 }
+
+@media only screen and (max-width: 599px) {
+  
+
+  .hamburger-menu {
+  position: fixed;
+  z-index: 100;
+  top: 6%;
+  right: 3%;
+  #border: black solid 1px;
+  #background: white;
+  cursor: pointer;
+  display: block;
+}
+
+.xIcon {
+  display: none;
+}
+  
+.nav {
+  transform: translateY(-200%);
+  #transition: transform 0.2s;
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
+.contacts__wrapper {
+  justify-content: center;
+}
+
+}
+
