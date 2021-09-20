@@ -2,7 +2,9 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="./css/solarized-light.min.css" rel="stylesheet">
@@ -12,75 +14,83 @@
 </head>
 
 <body>
-    <header class="header">
-      <div class="wrapper header__wrapper">
-        <div class="hamburger-menu">
-          <span class="menuIcon material-icons">
+
+  <header class="header">
+    <div class="wrapper header__wrapper">
+      <div class="hamburger-menu">
+        <span class="menuIcon material-icons">
           menu
         </span>
         <span class="xIcon material-icons">
           close
         </span>
-        </div>
-        <nav class="nav">
+      </div>
+      <nav class="nav">
         <ul class="nav__wrapper">
           <li class="nav__item"><a class="nav__item__link" href="#summary">Summary</a></li>
           <li class="nav__item"><a class="nav__item__link" href="#skills">Skills</a></li>
           <li class="nav__item"><a class="nav__item__link" href="#code">Code</a></li>
-          <li class="nav__item"><a class="nav__item__link" href="#experience">Experience</a></li>
+          <li class="nav__item"><a class="nav__item__link" href="#projects">Projects</a></li>
           <li class="nav__item"><a class="nav__item__link" href="#education">Education</a></li>
         </ul>
       </nav>
     </div>
-     </header>
-    <main class="page">
-        <section class="contacts">
-          <div class="wrapper contacts__wrapper">
-          <a class="photo" href="https://github.com/uchtiv">
-            <img src="./assets/images/photo.jpg" alt="Me" width="220" height="220">
-          </a>
+  </header>
+
+  <main class="page">
+    <section class="contacts">
+      <div class="wrapper contacts__wrapper">
+        <a class="photo" href="https://github.com/uchtiv">
+          <img src="./assets/images/photo.jpg" alt="Me" width="220" height="220">
+        </a>
         <div class="contacts-text">
           <a class="header-link" href="https://github.com/uchtiv">
-      <h1 class="page__title">
-          Victor Berg
-      </h1>
-        </a>
-        <h2>Frontend Developer</h2>
-        <ul>
-          <li>
-            <span>
-              Email:
-            </span>
-            <a href="mailto:example@example.com">example@example.com</a>
-          </li>
-          <li>
-            <span>
-              Phone:
-            </span>
-            <a href="tel:+10101010101">
-              +1 010-101-0101
-            </a>
-          </li>
-        </ul>
-       
+            <h1 class="page__title">
+              Victor Berg
+            </h1>
+          </a>
+          <h2>Frontend Developer</h2>
+          <ul>
+            <li>
+              <span>
+                Email:
+              </span>
+              <a href="mailto:example@example.com">example@example.com</a>
+            </li>
+            <li>
+              <span>
+                Phone:
+              </span>
+              <a href="tel:+10101010101">
+                +1 010-101-0101
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-        </section>
-      <section class="summary" id="summary">
-        <div class="wrapper">
-        <h4>
-          Summary:
-        </h4>
+    </section>
+    <section class="summary" id="summary">
+      <div class="wrapper section__wrapper">
+        <div class="section__title">
+        <h3>
+          Summary
+        </h3>
+        </div>
+        <div class="section__text">
         <p>
           Trying to learn new things. Love Linux, FOSS and Web Technologies.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore vero quidem nobis maxime dolorem aliquam quisquam eum ipsum amet. Vitae aut atque fuga dolorem. Vel voluptatibus fugiat nam. Impedit aperiam nesciunt facilis! Porro architecto dicta inventore tempora ratione quia odio.
         </p>
+        </div>
       </div>
-      </section>
-      <section class="skills" id="skills">
-        <div class="wrapper">
-        <h4>
-          Skills:
-        </h4>
+    </section>
+    <section class="skills" id="skills">
+      <div class="wrapper section__wrapper">
+        <div class="section__title">
+        <h3>
+          Skills
+        </h3>
+      </div>
         <ul class="skills-list">
           <li>JS basic,</li>
           <li>HTML,</li>
@@ -93,72 +103,82 @@
           <li>Git.</li>
         </ul>
       </div>
-      </section>
-      <section class="code" id="code">
-        <div class="wrapper">
-        <h4>
-          Code Example:
-        </h4>
+    </section>
+    <section class="code" id="code">
+      <div class="wrapper section__wrapper">
+        <div class="section__title">
+        <h3>
+          Code
+        </h3>
+      </div>
         <pre>
-            <code>
+          <code>
 function example() { 
   alert('вы умеете работать с подсветкой кода в markdown!');
 }
 
 example();
-          </code>
-        </pre>
-      </div>
-      </section>
-      <section class="experience" id="experience">
-        <div class="wrapper">
-        <h4>
-          Experience:
-        </h4>
-        <p>
-          Creating simple web pages.
-        </p>
-      </div>
-      </section>
-      <section class="education" id="education">
-        <div class="wrapper">
-        <h4>
-          Education:
-        </h4>
-        <a href="https://freecodecamp.org">
-          freecodecamp.org
-        </a><br>
-        <a href="https://udemy.com">
-          udemy.com
-        </a><br>
-        <a href="https://codecademy.com">
-          codecademy.com
-        </a><br>
-      </div>
-      </section>
-      <section class="language" id="language">
-        <div class="wrapper">
-        <h4>
-          English:
-        </h4>
-        <p>
-          A2 (Pre-Intermediate).
-        </p>
-      </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="wrapper">
-      <span>
-        <time datetime="2021">
-          © 2021 GitHub, Inc.
-        </time>
-      </span>
+        </code>
+      </pre>
     </div>
-    </footer>
-  <script src="./js/script.js"></script>
-  <script src="./js/highlight.min.js"></script>
-  <script>hljs.highlightAll();</script>
+  </section>
+  <section class="projects" id="projects">
+    <div class="wrapper section__wrapper">
+      <div class="section__title">
+      <h3>
+        Projects
+      </h3>
+    </div>
+      <p>
+        Creating simple web pages.
+      </p>
+    </div>
+  </section>
+  <section class="education" id="education">
+    <div class="wrapper section__wrapper">
+      <div class="section__title">
+      <h3>
+        Education
+      </h3>
+    </div>
+      <a href="https://freecodecamp.org">
+        freecodecamp.org
+      </a><br>
+      <a href="https://udemy.com">
+        udemy.com
+      </a><br>
+      <a href="https://codecademy.com">
+        codecademy.com
+      </a><br>
+    </div>
+  </section>
+  <section class="language" id="language">
+    <div class="wrapper section__wrapper">
+      <div class="section__title">
+      <h3>
+        English
+      </h3>
+    </div>
+      <p>
+        A2 (Pre-Intermediate).
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrapper">
+    <span>
+      <time datetime="2021">
+        © 2021 GitHub, Inc.
+      </time>
+    </span>
+  </div>
+</footer>
+
+<script src="./js/script.js"></script>
+<script src="./js/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
 </body>
 
 </html>
